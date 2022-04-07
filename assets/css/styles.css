@@ -110,8 +110,6 @@ nav ul li {
   gap: 2.5rem;
   /* max-width: 68.75rem; */
   margin: auto;
-  background: radial-gradient(100% 135% at 90% 0%, #00FF66 0%, #00FF66 33%, #00FFFF calc(33% + 1px), #00FFFF 75%, #EB00FF calc(75% + 1px), #EB00FF 100%), radial-gradient(circle at 60% 110%, #00FF66 0%, #00FF66 33%, #00FFFF calc(33% + 1px), #00FFFF 66%, #EB00FF calc(66% + 1px), #EB00FF 100%), radial-gradient(100% 225% at 0% 0%, #00FF66 0%, #00FF66 33%, #00FFFF calc(33% + 1px), #00FFFF 66%, #EB00FF calc(66% + 1px), #EB00FF 100%);
-background-blend-mode: multiply, multiply, normal;
 color: var(--primary-color);
 }
 
