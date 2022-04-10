@@ -71,11 +71,11 @@ nav {
 }
 
 nav h1 {
-  color: #69b9de;
+  color: #bae579;
 }
 
 nav a {
-  color:#69b9de ;
+  color:#bae579 ;
   transition: var(--transition);
 }
 nav a:hover {
@@ -93,7 +93,7 @@ nav ul li {
 }
 
 .burger-menu {
-  color: var(--primary-color);
+  color: #bae579;
   font-size: 2rem;
   border: 0;
   background-color: transparent;
