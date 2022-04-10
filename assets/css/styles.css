@@ -71,11 +71,11 @@ nav {
 }
 
 nav h1 {
-  color: var(--primary-color);
+  color: #69b9de;
 }
 
 nav a {
-  color: var(--primary-color);
+  color:#69b9de ;
   transition: var(--transition);
 }
 nav a:hover {
