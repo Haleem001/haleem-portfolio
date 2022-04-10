@@ -288,10 +288,11 @@ color: var(--primary-color);
 /* Social buttons */
 .socials {
   display: flex;
-  flex-direction: column;
-  position: fixed;
+  flex-direction: row;
   right: 1%;
   bottom: 50%;
+  justify-content: center;
+  padding-top: 50px;
 }
 
 .socicon {
@@ -438,4 +439,9 @@ footer {
 }
 .copy{
   color:  #d0d8f4;
+}
+.logo-img{
+  height: 50px;
+  border-radius: 5px;
+  
 }

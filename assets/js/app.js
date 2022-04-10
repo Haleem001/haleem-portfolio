@@ -5,6 +5,7 @@ const nav = document.querySelector("nav");
 
 // Scroll to top selection
 const scrollUp = document.querySelector("#scroll-up");
+var mybutton = document.getElementById("#scroll-up")
 
 // Select nav links
 const navLink = document.querySelectorAll(".nav-link");
@@ -22,6 +23,13 @@ navLink.forEach((link) =>
 );
 
 // scroll to top functionality
+function scrollFunction() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
 scrollUp.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
