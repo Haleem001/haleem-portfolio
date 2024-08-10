@@ -1,3 +1,34 @@
+const text = "Hi, I am Haleem";
+const typingText = document.getElementById("typing-text");
+const heroRest = document.getElementById("hero-rest");
+let i = 0;
+
+function typeWriter() {
+  if (i < text.length) {
+    typingText.innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeWriter, 100);
+  } else {
+    // Fade in the rest of the hero content after typing is done
+    heroRest.style.opacity = "1";
+    // Refresh AOS to trigger animations
+    AOS.refresh();
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  typeWriter();
+  AOS.init({
+    duration: 800,
+    easing: 'ease-in-out',
+    once: true,
+    mirror: false
+  });
+});
+
+
+
+
 // Nav hamburgerburger selections
 const burger = document.querySelector("#burger-menu");
 const ul = document.querySelector("nav ul");
@@ -46,3 +77,5 @@ scrollUp.addEventListener("click", () => {
 //     nav.classList.toggle('show');
 //   });
 // });
+
+
