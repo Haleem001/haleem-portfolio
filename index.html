@@ -2,312 +2,186 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!--CSS Styles -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
-
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/icons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/icons/favicon-32x32.png"
-    />
-
-    <!-- Animate CSS CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
     <title>Haleem | Web Developer</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   </head>
-
   <body>
-    <!-- Navbar -->
-    <nav>
-     <a href="#" target="_blank">
-        <img 
-      src="assets/images/logo.jpg"
-      loading="lazy"
-      class="logo-img
-      " ></a>
-      <h1 class="hero-name">Mahmud Ghali</h1>
-      <ul class="navigation">
+    <nav id="navbar">
+      <a href="#" class="logo">
+        <img src="assets/images/logo.jpg" alt="Logo" class="logo-img">
+      </a>
+      <ul class="nav-links">
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
-        <!-- <li><a href="#projects" class="nav-link">Projects</a></li> -->
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
-      <button class="burger-menu" id="burger-menu">
-        <ion-icon class="bars" name="menu-outline"></ion-icon>
-        <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
-      </button>
+      <div class="burger" id="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
     </nav>
     
-
-    <!-- Hero Section -->
     <section class="hero" id="about">
-      <img
-        src="assets/images/hero-img.svg"
-        alt="haleem"
-        loading="lazy"
-        class="hero-img"
-      />
-      <div class="bio animate__animated animate__shakeX">
-        <h2 class="bio-title">About Me</h2>
-        <p class="bio-text">
-          <p>WELCOME TO HALEEM'S WORLD!</p>
-          My name is Haleem
-          I am a 4th year computer science student with some skills in web development 
+      <div class="hero-content">
+        <h1 class="hero-title">Hi, I'm Haleem</h1>
+        <h2 class="hero-subtitle">Web Developer & CS Student</h2>
+        <p class="hero-description">
+          I'm a 4th year computer science student with skills in web development.
+          Welcome to my world of tech and anime!
         </p>
+        <a href="#contact" class="cta-button">Get In Touch</a>
       </div>
     </section>
 
-    <!-- More about -->
-    <section class="more-about">
-      <h2>More About Me</h2>
-      <p>
-        Wanna know more about me?
-        Well I am just into tech and anime.
-        
-
-      </p>
-      <p>
-        I am a frontend web developer with html,css and javascript skills.
-        I also love taking pictures with my mobile phone. I am pretty good at that
-        You can find some of the pictures I took with my mobile phone here
-
-      </p>
-      <p>
-        I also have some backend skills with the Python's backend framework (Django)
-      </p>
-    </section>
-
-    <!-- Skills section -->
     <section class="skills" id="skills">
-      <h2 class="skill-header">My Top Skills</h2>
-
-      <div class="skills-wrapper">
-        <div class="first-set animate__animated animate__pulse">
-          <img
-            src="assets/icons/icons8-html-5.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-css3.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-javascript.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
+      <h2>My Skills</h2>
+      
+      <h3>Frontend</h3>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
+          </a>
+          <p>HTML5</p>
         </div>
-
-        <div class="second-set animate__animated animate__pulse">
-          <img
-            src="assets/icons/icons8-bootstrap.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-react-native.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-git.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-            
-          />
-          <!-- <img
-            src="assets/icons/icons8-git.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-            
-          /> -->
+        <div class="skill-item">
+          <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
+          </a>
+          <p>CSS3</p>
+        </div>
+        <div class="skill-item">
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
+          </a>
+          <p>JavaScript</p>
+        </div>
+        <div class="skill-item">
+          <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/>
+          </a>
+          <p>React</p>
+        </div>
+        <div class="skill-item">
+          <a href="https://getbootstrap.com" target="_blank" rel="noreferrer">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/>
+          </a>
+          <p>Bootstrap</p>
+        </div>
+        <div class="skill-item">
+          <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
+            <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/>
+          </a>
+          <p>Tailwind</p>
+        </div>
+        <div class="skill-item">
+          <a href="https://jquery.com/" target="_blank" rel="noreferrer">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jquery/jquery-original-wordmark.svg" alt="jquery" width="40" height="40"/>
+          </a>
+          <p>jQuery</p>
+        </div>
+      </div>
+    
+      <h3>Backend</h3>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <a href="https://www.python.org" target="_blank" rel="noreferrer">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/>
+          </a>
+          <p>Python</p>
+        </div>
+        <div class="skill-item">
+          <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer">
+            <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="40" height="40"/>
+          </a>
+          <p>Django</p>
+        </div>
+        <div class="skill-item">
+          <a href="https://www.django-rest-framework.org/" target="_blank" rel="noreferrer">
+            <img src="https://www.django-rest-framework.org/img/logo.png" alt="django rest framework" width="40" height="40"/>
+          </a>
+          <p>DRF</p>
+        </div>
+      </div>
+    
+      <h3>Databases</h3>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <a href="https://www.postgresql.org" target="_blank" rel="noreferrer">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/>
+          </a>
+          <p>PostgreSQL</p>
+        </div>
+        <div class="skill-item">
+          <a href="https://www.sqlite.org/" target="_blank" rel="noreferrer">
+            <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite" width="40" height="40"/>
+          </a>
+          <p>SQLite</p>
+        </div>
+      </div>
+    
+      <h3>DevOps & Tools</h3>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
+            <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/>
+          </a>
+          <p>Git</p>
+        </div>
+        <div class="skill-item">
+          <a href="https://www.linux.org/" target="_blank" rel="noreferrer">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/>
+          </a>
+          <p>Linux</p>
+        </div>
+        <div class="skill-item">
+          <a href="https://postman.com" target="_blank" rel="noreferrer">
+            <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/>
+          </a>
+          <p>Postman</p>
         </div>
       </div>
     </section>
+    
 
-    <!-- Projects section -->
-    <!-- <section class="projects" id="projects">
-      <h2 class="projects-title">Some of my Recent Projects</h2>
-      <div class="projects-container">
-        <div class="project-container project-card">
-          <img
-            src="assets/images/expenseTracker.png"
-            alt="expense-tracker"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Expense Tracker</h3>
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
-        </div>
-        <div class="project-container project-card">
-          <img
-            src="assets/images/netflixClone.png"
-            alt="netflic-clone"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Netflix Clone</h3>
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
-        </div>
-        <div class="project-container project-card">
-          <img
-            src="assets/images/greenyEarth.png"
-            alt="greeny-earth"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Greeny Earth</h3>
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- Contact section -->
     <section class="contact" id="contact">
-      <h2>Get In Touch With Me</h2>
-      <div class="contact-form-container">
-        <div class="contact-form">
-          <form action="https://formspree.io/f/mrgjawqe" method="POST">
-            <div class="form-control">
-              <label for="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="sender-name"
-                placeholder="Enter Your Name"
-                class="input-field"
-                required
-              />
-            </div>
-            <div class="form-control">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="sender-email"
-                placeholder="Enter Your Email"
-                class="input-field"
-                required
-              />
-            </div>
-            <div class="form-control">
-              <label for="message">Message</label>
-              <textarea
-                id="message"
-                cols="60"
-                rows="10"
-                placeholder="Enter Your Message"
-                name="message"
-                class="input-field"
-                required
-              ></textarea>
-            </div>
-            <input
-              type="submit"
-              value="Submit"
-              id="submit-btn"
-              class="submit-btn"
-            />
-          </form>
+      <h2>Get In Touch</h2>
+      <form class="contact-form" action="https://formspree.io/f/mrgjawqe" method="POST">
+        <div class="form-group">
+          <input type="text" name="name" class="form-control" placeholder="Your Name" required>
         </div>
-      </div>
+        <div class="form-group">
+          <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <textarea name="message" class="form-control" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
     </section>
 
-    <!-- Social accounts - Fixed to the right -->
     <div class="socials">
-      <a href="https://twitter.com/MahmoudG_?t=h0tf9eNWlKNJGK7iiucMLQ&s=09" target="_blank"
-        ><img
-          src="assets/icons/icons8-twitter-circled.gif"
-          alt="Twitter"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="https://instagram.com/haleeem.__?utm_medium=copy_link" target="_blank"
-        ><img
-          src="assets/icons/icons8-instagram.gif"
-          alt="Instagram"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="https://www.linkedin.com/in/mahmud-ghali-157b07227" target="_blank"
-        ><img
-          src="assets/icons/icons8-linkedin-circled.gif"
-          alt="Linkedin"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="https://github.com/Haleem001" target="_blank"
-        ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
-      /></a>
+      <a href="https://twitter.com/MahmoudG_?t=h0tf9eNWlKNJGK7iiucMLQ&s=09" target="_blank">
+        <img src="assets/icons/icons8-twitter-circled.gif" alt="Twitter" loading="lazy" class="socicon">
+      </a>
+      <a href="https://instagram.com/haleeem.__?utm_medium=copy_link" target="_blank">
+        <img src="assets/icons/icons8-instagram.gif" alt="Instagram" loading="lazy" class="socicon">
+      </a>
+      <a href="https://www.linkedin.com/in/mahmud-ghali-157b07227" target="_blank">
+        <img src="assets/icons/icons8-linkedin-circled.gif" alt="Linkedin" loading="lazy" class="socicon">
+      </a>
+      <a href="https://github.com/Haleem001" target="_blank">
+        <img src="assets/icons/icons8-github.gif" alt="Github" class="socicon">
+      </a>
     </div>
 
-    <!-- Scroll to top -->
-    <i class="scroll-up" id="scroll-up"
-      ><img
-        src="assets/icons/icons8-upward-arrow.gif"
-        class="socicon up-arrow"
-        alt=""
-    /></i>
-
-    <!-- Footer section -->
     <footer>
-      <p class="copy">&copy; Copyright 2022</p>
-      <p class="copy">
-        <!-- Built with &#x2661; by
-        <a href="https://twitter.com/koladechris" target="_blank"
-          >Kolade Chris (Ksound)</a
-        >
-      </p> -->
+      <p>&copy; 2024 Haleem. All rights reserved.</p>
     </footer>
 
-    <!-- Website scripts -->
     <script src="assets/js/app.js"></script>
-
-    <!-- Ion icons scripts -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
   </body>
 </html>
