@@ -275,33 +275,27 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
   .nav-links {
-    position: absolute;
-    right: 0px;
-    height: 92vh;
-    top: 8vh;
-    background-color: var(--bg-color);
-    display: flex;
+    display: none;
     flex-direction: column;
-    align-items: center;
-    width: 50%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-color);
+    text-align: center;
   }
-  .nav-links li {
-    opacity: 0;
+
+  .nav-links.show {
+    display: flex;
   }
+
   .burger {
     display: block;
   }
 }
 
-.nav-active {
-  transform: translateX(0%);
-}
+
 
 @keyframes navLinkFade {
   from {
