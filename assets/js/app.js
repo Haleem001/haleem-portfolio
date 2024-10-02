@@ -1,4 +1,4 @@
-const text = "Hi, I am Haleem";
+const text = "Hi, I am Mahmud Ghali";
 const typingText = document.getElementById("typing-text");
 const heroRest = document.getElementById("hero-rest");
 let i = 0;
