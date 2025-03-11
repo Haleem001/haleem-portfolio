@@ -409,6 +409,12 @@ nav {
   display: none;
   cursor: pointer;
 }
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
 
 .burger div {
   width: 25px;

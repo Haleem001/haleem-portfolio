@@ -68,3 +68,6 @@ document.addEventListener('DOMContentLoaded', async () => {
  
   
 });
+
+  document.getElementById('currentYear').textContent = new Date().getFullYear();
+

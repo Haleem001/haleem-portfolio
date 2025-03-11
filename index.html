@@ -28,6 +28,7 @@
       <ul class="nav-links">
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
       <div class="burger" id="burger-menu">
@@ -209,6 +210,63 @@
             </div>
         </div>
     </div>
+    <div class="project-card" data-aos="fade-up">
+      <div class="project-image">
+          <img src="assets/images/naira_usd.jpg" alt="LTS">
+      </div>
+      <div class="project-info">
+          <h3 class="project-title">Naira Rate Bot</h3>
+          <p>This is a Telegram bot that gives real-time rate of Dollar(USD) to Naira(NGN).</p>
+            <p>It can also convert Naira-Dollar and Dollar-Naira </p>
+          
+          
+          <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Telegram Bot API</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Flask</span>
+          </div>
+          
+          <div class="project-links">
+              <a href="https://t.me/NGNRateBot" class="project-btn primary">
+                  <i class="fas fa-external-link-alt"></i>
+                  Live Demo
+              </a>
+              <a href="https://github.com/Haleem001/naira-rate-bot" class="project-btn secondary">
+                  <i class="fab fa-github"></i>
+                  Source Code
+              </a>
+          </div>
+      </div>
+  </div>
+  <div class="project-card" data-aos="fade-up">
+    <div class="project-image">
+        <img src="assets/images/idp-api.png" alt="LTS">
+    </div>
+    <div class="project-info">
+        <h3 class="project-title">IDP APP Backend API</h3>
+      
+        <p>This is the backend API for the IDP APP. It is built using Django Rest Framework and PostgreSQL.</p>
+        <div class="project-tech">
+
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Django</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">Django REST Framework</span>
+        </div>
+        
+        <div class="project-links">
+            <a href="https://dev-project-one.vercel.app/api/swagger/" class="project-btn primary">
+                <i class="fas fa-external-link-alt"></i>
+                Live Demo
+            </a>
+            <a href="https://github.com/Haleem001/dev_project" class="project-btn secondary">
+                <i class="fab fa-github"></i>
+                Source Code
+            </a>
+        </div>
+    </div>
+</div>
           
         <!-- Add more project cards as needed -->
       </div>
@@ -248,9 +306,11 @@
     </div>
 
     <footer>
-      <p>&copy; 2024 Haleem. All rights reserved.</p>
-    </footer>
+      <div class="footer">
+      <p>&copy; <span id="currentYear"></span> Haleem. All rights reserved.</p>
 
+    </footer>
+</div>
 
 
     <script src="assets/js/app.js"></script>
