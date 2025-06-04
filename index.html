@@ -21,6 +21,44 @@
 
   </head>
   <body>
+     <!-- Portfolio Background -->
+    <div class="portfolio-background">
+        <div class="bg-animations">
+            <!-- Grid Pattern -->
+            <div class="grid-pattern"></div>
+            
+            <!-- Gradient Orbs -->
+            <div class="gradient-orbs">
+                <div class="orb orb-1"></div>
+                <div class="orb orb-2"></div>
+                <div class="orb orb-3"></div>
+            </div>
+            
+            <!-- Floating Shapes -->
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+                <div class="shape shape-6"></div>
+            </div>
+            
+            <!-- Floating Particles -->
+            <div class="particles">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+        </div>
+    </div>
     <nav id="navbar">
       <a href="#" class="logo">
         <img src="assets/images/logo.jpg" alt="Logo" class="logo-img">
@@ -41,9 +79,20 @@
     
     <section class="hero" id="about">
       <div class="hero-content">
-        <h1 class="hero-title" id="typing-text"></h1>
+                <div class="bg-animation">
+            <div class="floating-shapes">
+                <div class="shape"></div>
+                <div class="shape"></div>
+                <div class="shape"></div>
+                <div class="shape"></div>
+            </div>
+            </div>
+        
+            <div class="greeting">Hello, I'm</div>
+            <h1 class="name" id="typing-text"></h1>
+            <!-- <h2 class="title">Full-Stack Web Developer</h2> -->
         <div id="hero-rest" style="opacity: 0; transition: opacity 1s ease-in-out;">
-          <h2 class="hero-subtitle" data-aos="fade-right" data-aos-delay="200">Web Developer</h2>
+          <h2 class="hero-subtitle" data-aos="fade-right" data-aos-delay="200">Full-Stack Web Developer</h2>
         <div class="container-di">
            <div class="hero-par">
              <p class="hero-description" data-aos="fade-right" data-aos-delay="400">
@@ -53,17 +102,29 @@
             <p>Let's build something amazing together! Ready to bring your vision to life.</p>
           </p> 
           <br>
+          <p class="cta-text">Explore my work and let's connect!</p>
+         <div class="cta-section" data-aos="fade-up" data-aos-delay="600">
+            
+                <a href="#projects" class="cta-button cta-primary">
+                    View My Work
+                    <span>→</span>
+                </a>
+                <a href="#contact" class="cta-button cta-secondary">
+                    Get In Touch
+                </a>
+            </div>
           </div>
+          
         </div>
          
          
-          <span data-aos="fade-up" data-aos-delay="600"><a href="#skills" class="cta-button">My skills</a></span>
-          <span data-aos="fade-up" data-aos-delay="600"><a href="assets/mahmud_ghali_resume.pdf" class="cta-button" download>Download Resume</a></span>
+
 
         </div>
+        
       </div>
+      
     </section>
-    
     
     
 
@@ -179,9 +240,7 @@
     </section>
     <section id="projects" class="projects-section" data-aos="fade-up">
       <h2 class="section-title">My Projects</h2>
-      <div class="projects-grid">
-        
-             
+      <div class="projects-grid"> 
       <div class="project-card" data-aos="fade-up">
         <div class="project-image">
             <img src="assets/images/lts.png" alt="LTS">
@@ -204,6 +263,36 @@
                     Live Demo
                 </a>
                 <a href="https://github.com/Haleem001/loan_tracking_software" class="project-btn secondary">
+                    <i class="fab fa-github"></i>
+                    Source Code
+                </a>
+            </div>
+        </div>
+    </div>
+      <div class="project-card" data-aos="fade-up">
+        <div class="project-image">
+            <img src="assets/images/expense-tracker.png" alt="Expense Tracker">
+        </div>
+        <div class="project-info">
+            <h3 class="project-title">Expense Tracker</h3>
+            <p>This React Application is designed and developed to keep track of a user's expenses</p>
+            
+            
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+               <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Material UI</span>
+                <span class="tech-tag">React</span>
+               
+            </div>
+            
+            <div class="project-links">
+                <a href="https://expense-tracker-eta-five-69.vercel.app/login" class="project-btn primary">
+                    <i class="fas fa-external-link-alt"></i>
+                    Live Demo
+                </a>
+                <a href="https://github.com/Haleem001/expense-tracker" class="project-btn secondary">
                     <i class="fab fa-github"></i>
                     Source Code
                 </a>
@@ -318,6 +407,9 @@
 <script>
   AOS.init();
 </script>
+<button id="scroll-up" class="scroll-up-btn" aria-label="Scroll to top">
+  <i class="fas fa-chevron-up"></i>
+</button>
 
   </body>
 </html>
