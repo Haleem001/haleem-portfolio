@@ -54,8 +54,8 @@ a:hover {
         }
 
         .name {
-            font-size: clamp(3rem, 8vw, 5rem);
-            font-weight: 800;
+            font-size: clamp(2rem, 10vw, 3rem);
+            font-weight: 500;
             background: linear-gradient(135deg, #22c55e 0%, #3b82f6 50%, #8b5cf6 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -153,10 +153,10 @@ nav {
 }
 
 .hero-subtitle {
-  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  font-size: clamp(0.7rem, 2vw, 1.2rem);
   margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
   color: var(--color-text);
-  font-weight: var(--font-weight-normal);
+  font-weight: 150;
   opacity: 0.9;
 }
 
@@ -290,21 +290,34 @@ nav {
     font-size: 0.95rem;
   }
 }
-
+.section-title{
+  text-align: center;
+}
 /* Skills Section */
 .skills {
   padding: 5rem 5%;
-}
 
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 2rem;
 }
+       .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            align-items: center;
+        }
 
-.skill-item {
-  text-align: center;
-}
+        .skill-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
+
+
+        .skill-name {
+           
+            text-align: center;
+        }
 
 .skill-icon {
   font-size: 3rem;
@@ -321,7 +334,22 @@ nav {
   transition: all 0.4s ease;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+ 
 }
+           .demo-creds {
+            background: rgba(255, 193, 7, 0.1);
+            border: 1px solid rgba(255, 193, 7, 0.3);
+            border-radius: 8px;
+            padding: 8px 12px;
+            margin: 8px 0;
+            font-size: 0.8rem;
+            color: #ffc107;
+        }
 
 .project-card:hover {
   transform: translateY(-10px);
@@ -332,6 +360,12 @@ nav {
   border-radius: 12px;
   overflow: hidden;
   position: relative;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+
 }
 
 .project-image img {
@@ -410,7 +444,7 @@ nav {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(2, minmax(350px, 1fr));
   gap: 2.5rem;
   padding: 20px;
   width: 100%;
@@ -582,16 +616,7 @@ nav {
   transform: rotate(45deg) translate(-5px,-6px);
 }
 
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
-}
 
-.skill-item {
-  text-align: center;
-}
 
 .skill-item img {
   width: 30px;
