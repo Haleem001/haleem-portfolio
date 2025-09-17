@@ -164,6 +164,35 @@ document.addEventListener('DOMContentLoaded', async () => {
   DOM.heroRest.style.transition = "opacity 0.8s ease";
   
   AOS.refresh();
+
+  // Intercept contact form submission to prevent Formspree redirect
+  if (DOM.form) {
+    DOM.form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const form = e.target;
+      const formData = new FormData(form);
+      const action = form.getAttribute('action');
+      const method = form.getAttribute('method') || 'POST';
+      try {
+        const response = await fetch(action, {
+          method,
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+        if (response.ok) {
+          // Redirect to thank you page
+          window.location.href = 'thankyou.html';
+        } else {
+          // Optionally show an error message
+          alert('There was a problem submitting the form.');
+        }
+      } catch (err) {
+        alert('There was a problem submitting the form.');
+      }
+    });
+  }
 });
 // Initialize
 document.addEventListener('DOMContentLoaded', async () => {
